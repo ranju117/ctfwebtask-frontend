@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Women's Fashion</title>
+</head>
+<style type="text/css">
+.thumbnail
+{
+width:100%;
+
+margin-left: 1.6%;
+margin-right: 1.6%;
+float:left;
+
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<body>
+	   <body id="body">
+  
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#"><span onclick="openNav()"><button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+</button> </span></a>
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/furn.html">Furniture</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/men.html">Men's Fashion</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/women.html">Women's fashion</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/mobiles.html">Mobiles</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/books.html">Books</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/sports.html">Sports equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="file:///Users/ranjani/Desktop/ecommerce/ecom.html">ecom</a></li>
+      </ul>
+    </div>
+</div><!-- /.container-fluid -->
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" id="selectall">ALL</a>
+  <a href="#" id="lessthan1k"><1000</a>
+  <a href="#" id="lessthan5k"><5000</a>
+  <a href="#" id="lessthan10k"><10000</a>
+</div>
+
+
+	<div class="container">
+<div id="main"> 
+<div class="row">  
+	<div class="col-lg-4 col-sm-6">
+  <div class="thumbnail grthan1k clothes">
+<img src="https://i.ebayimg.com/thumbs/images/g/Re4AAOSwc5havvcq/s-l200.jpg" class="img">
+<p><strong>Diva</strong></p>
+<p>Price:Rs.2000</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="thumbnail grthan1k clothes">
+<img src="http://businessarcade.com/image/cache/catalog/product-9704/GilhreQeUY-b1-200x200.jpg" class="img">
+<p><strong>CutiePie</strong></p>
+<p>Price:Rs.1150</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="thumbnail grthan1k grthan5k clothes">
+<img src="http://www.desconfacades.co.uk/image/cache/data/category_4/rich-and-royal-splice-crew-longsleeve-long-sleeved-top-pearl-white-oieajt8z-680-200x200_0.jpg" class="img">
+<p><strong>WhitenPink</strong></p>
+<p>Price:Rs.5500</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 col-sm-6">
+<div class="thumbnail grthan10k grthan1k grthan5k clothes">
+<img src="https://s-media-cache-ak0.pinimg.com/originals/ad/bb/11/adbb1186040923ef75103c16bfad8f75.jpg" class="img">
+<p><strong>Diva Saree</strong><p>
+<p>Price:Rs.16000</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="thumbnail grthan1k grthan5k clothes">
+<img src="https://static.daraz.pk/cms/2018/W1/error/Women's-Fashion.png" class="img">
+<p><strong>Salwar</strong><p>
+<p>Price:Rs.7500</p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6">
+<div class="thumbnail clothes">
+<img src="http://imshopping.rediff.com/imgshop/200-200/shopping/pixs/30378/i/img_9464._hive91-women-tops-off-shoulder--design--black-printed-rayon-fabric.jpg" class="img">
+<p><strong>Sweetstripes</strong></p>
+<p>Price:Rs.500</p>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="jsfile.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

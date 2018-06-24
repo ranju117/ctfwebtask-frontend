@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobiles</title>
+
+<style type="text/css">
+.thumbnail
+{
+width:100%;
+
+margin-left: 1.6%;
+margin-right: 1.6%;
+float:left;
+
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.styling
+{
+  color: white;
+}
+label
+{
+  color: white;
+}
+
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	   
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      
+    <a class="navbar-brand" href="#"><span onclick="openNav()"><button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+</button> </span></a>
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/furn.html">Furniture</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/men.html">Men's Fashion</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/women.html">Women's fashion</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/mobiles.html">Mobiles</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/books.html">Books</a></li>
+            <li><a href="file:///Users/ranjani/Desktop/ecommerce/sports.html">Sports equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="file:///Users/ranjani/Desktop/ecommerce/ecom.html">ecom</a></li>
+      </ul>
+    </div>
+</div><!-- /.container-fluid -->
+</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" id="selectall">ALL</a>
+  <a href="#" id="lessthan5k"><5000</a>
+  <a href="#" id="lessthan10k"><10000</a>
+  <a href="#" id="lessthan20k"><20000</a>
+
+</div>
+<div id="main">
+	<div class="container">
+    <div class="row">  
+  <div class="col-lg-4 col-sm-6">
+	<div class="thumbnail mobiles fiveinch" id="wonemp">
+<img src="https://www.gazelle.com/packs/images/iphone-f38df119ebd6e5ebe492066ae578a3a4.png" class="img">
+<p><strong>iPhone 5s</strong></p>
+<p>Display:4.00-inch.</p>
+<p>Processor:1.3GHz dual-core.</p>
+<p>Front Camera:1.2-megapixel.</p>
+<p>Resolution:640x1136 pixels.</p>
+<p>Price:Rs.20,000</p>
+</div>
+</div>
+
+  <div class="col-lg-4 col-sm-6">
+<div class="thumbnail mobiles lessthan20k fivemp">
+<img src="https://md2.pricebaba.com/images/product/mobile/47482/vivo-v9-l.jpg" class="img">
+<p><strong>Vivo V5 plus</strong></p>
+<p>Display:5.00-inch.</p>
+<p>Processor:1.4GHz quad-core.</p>
+<p>Front Camera:5-megapixel.</p>
+<p>Resolution:540x960 pixels.</p>
+<p>Price:Rs.11,500</p>
+</div>
+</div>
+
+  <div class="col-lg-4 col-sm-6">
+<div class="thumbnail mobiles lessthan10k lessthan20k fivemp">
+<img src="https://image3.pricedekho.com/p/1/0/70/2212270/9847203-micromax-canvas-6-pro-black-picture-big.jpg" class="img">
+<p><strong>Micromax Canvas</strong></p>
+<p>Display:5.00-inch.</p>
+<p>Processor:1.2GHz quad-core.</p>
+<p>Front Camera:5-megapixel.</p>
+<p>Resolution:720x1280 pixels.</p>
+<p>Price:Rs.5000</p>
+</div>
+</div>
+</div>
+<div class="row">  
+  <div class="col-lg-4 col-sm-6">
+<div class="thumbnail mobiles lessthan20k fivemp">
+<img src="https://md4.pricebaba.com/images/product/mobile/5518/samsung-galaxy-j3-pro-l.jpg" class="img">
+<p><strong>Samsung Galaxy j3</strong><p>
+<p>Display:5.00-inch.<p>
+<p>Processor:1.5GHz quad-core.<p>
+<p>Front Camera:5-megapixel.<p>
+<p>Resolution:720x1280 pixels.<p>
+<p>Price:Rs.16000</p>
+</div>
+</div>
+
+  <div class="col-lg-4 col-sm-6">
+<div class="thumbnail mobiles lessthan5k lessthan10k lessthan20k fivemp" id="cheap">
+<img src="https://md4.pricebaba.com/images/product/mobile/47402/lava-z-50-l.jpg" class="img">
+<p><strong>Lava Z50</strong><p>
+<p>Display:4.50-inch.<p>
+<p>Processor:1.1GHz quad-core.<p>
+<p>Front Camera:5-megapixel.<p>
+<p>Resolution:720x1280 pixels.<p>
+<p>Price:Rs.3500</p>
+</div>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mobiles.js"></script>
+</body>
+</html>
